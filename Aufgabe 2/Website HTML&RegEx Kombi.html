@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegExMitHTMlKombination</title>
+</head>
+<body>
+    <h1>Gib dini Date ih: *_*</h1>
+    <h2>Alles mit * sin Pflichtfeldr</h2>
+    
+    <form action="Danke HTML_ufgob2.html">
+        <label for="vorname">Vorname:*</label>
+        <input type="text" id="vorname" name="vorname" pattern="^[a-zA-Z]+$"required title="Nur Buchstaben"><br><br>
+
+        <label for="nachname">Familienname:*</label>
+        <input type="text" id="nachname" name="nachname" pattern="^[a-zA-Z]+$" required title="Nur Buchstaben"><br><br>
+
+        <label for="strasse">Strasse:*</label>
+        <input type="text" id="strasse" name="strasse"
+               pattern="^[a-zA-Z\s]+$" required
+               title="Straße darf nur Buchstaben und Leerzeichen enthalten."><br><br>
+
+        <label for="hausnummer">Hausnummer:*</label>
+        <input type="text" id="hausnummer" name="hausnummer"  
+               pattern="^[1-9][0,9\s\]+{3}$" required
+               title="Hausnummer darf Zahlen und Leerzeichen enthalten."><br><br>
+        
+        <label for="email">E-Mail-Adresse:</label>
+        <input type="email" id="email" name="email" 
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required
+                title="Bitte geben Sie eine gültige E-Mail-Adresse ein (Bispiel: Aufgabe2@aprentas.stud.com)."><br><br>
+
+
+        <label for="telefon">Telefonnummer:*</label>
+        <input type="tel" id="telefon" name="telefon"  
+                pattern="^\+?[0-9]{1,4}?[-.\s]?[0-9]+([-.\s]?[0-9]+)*$" required
+                title="Bitte geben Sie eine gültige Telefonnummer ein (z. B. +41 000 0000000)."><br><br>
+
+        <button type="submit">Absenden</button>
+    </form>
+</body>
+</html>

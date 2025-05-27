@@ -1,0 +1,175 @@
+<!DOCTYPE html> 
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über uns - United Curry Nation</title>
+    <link rel="stylesheet" href="Aufgabe5CSS-teil.css">
+    <style>
+        /* Currydesign: Farbschema und Layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f7f2;
+            color: #333;
+        }
+
+        /* Header und Navigation */
+        header {
+            background-color: #8B4513;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #ffdd57;
+        }
+
+        /* Hauptbereich */
+        #about {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        #about h2 {
+            font-size: 28px;
+            color: #8B4513;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        #about p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #8B4513;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer p a {
+            color: #ffdd57;
+            text-decoration: none;
+        }
+
+        /* Responsives Design */
+        @media (max-width: 768px) {
+            #about {
+                padding: 15px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header mit Navigationsleiste und Menü-Icon -->
+    <header>
+        <h1>United Curry Nation</h1>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="about.html">Über uns</a></li>
+                <li><a href="services.html">Kernaktivitäten</a></li>
+                <li><a href="team.html">Unser Team</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('active');
+        }
+    </script>
+
+
+    <section id="about">
+        <h2>Unsere Geschichte</h2>
+        <p>
+            Im Jahr 2024 gründete Herr Curry United Curry Nation mit einer klaren Mission: die Menschen Europas durch den Zauber exotischer Aromen und Gewürze zu verbinden. 
+            Nach einer Reise durch Südostasien und den Nahen Osten kehrte er inspiriert zurück, vollgepackt mit seltenen Gewürzen und dem Traum, diese Kulturen in seinen Kreationen aufleben zu lassen. 
+            Doch obwohl das Unternehmen schnell wuchs und Aufmerksamkeit erlangte, fühlte er, dass noch eine besondere Zutat fehlte, um seine Vision vollends zu verwirklichen.
+        </p>
+        <p>
+            Diese Zutat betrat eines Tages die Küche in Gestalt von Frau Spice, einer leidenschaftlichen und begnadeten Gewürzmeisterin, die seine Begeisterung für Geschmack und Authentizität teilte. 
+            Als sie die Küchenleitung übernahm, brachte sie eine ganz neue Dimension von Aromen und Kreativität mit. Ihre Gewürzmischungen hatten eine Magie, die selbst Herr Curry beeindruckte, 
+            und bald arbeiteten sie enger zusammen, als sie es je erwartet hätten. Zwischen all den Rezepten und Gewürzproben entstand eine tiefe Verbindung – eine, die sie zunächst selbst überraschte.
+
+        </p>
+
+        <p>
+            Im Laufe der Zeit entdeckten Herr Curry und Frau Spice, dass ihre Zusammenarbeit mehr war als bloße Leidenschaft für Gewürze. Inmitten all der Düfte, 
+            dem gemeinsamen Experimentieren und den langen Abenden voller Geschichten und gemeinsamer Mahlzeiten entwickelte sich eine zarte, romantische Verbindung. 
+            Mit jedem neuen Gericht, das sie gemeinsam kreierten, wurde ihre Partnerschaft enger, und bald wurde ihnen klar, dass sie nicht nur kulinarisch, sondern auch persönlich verbunden waren.
+
+        </p>
+        <p>
+            So wurde das Motto von United Curry Nation geboren: „Erst der Geschmack, der verbindet.“ Dieses Motto steht nicht nur für die Kulinarik, sondern für ihre eigene Liebesgeschichte – eine Geschichte, 
+            die das Herz und die Seele des Unternehmens prägt. Heute ist United Curry Nation nicht nur ein Ort für feine Aromen und exotische Speisen, sondern ein Symbol für die Kraft der Verbindung und die Magie, die entsteht, 
+            wenn Leidenschaft und Liebe zusammentreffen.
+
+        </p>
+        
+        <p>
+            Mit der Zeit wuchs das Unternehmen und entwickelte sich von einem kleinen Restaurant zu einem breit aufgestellten Unternehmen mit einer Vielzahl von Dienstleistungen, 
+            die von Catering und Kochworkshops bis hin zu einer exklusiven Produktlinie mit Gewürzen und Saucen reichen. 
+            Jedes Produkt und jeder Service steht für die Werte von United Curry Nation: Qualität, Authentizität und Innovation. 
+            Heute ist das Unternehmen stolz darauf, Menschen zu verbinden und durch die Kraft des Geschmacks Kulturen näher zu bringen.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 United Curry Nation. Alle Rechte vorbehalten.</p>
+        <p>Website erstellt von <a href="https://www.linkedin.com/in/abdullahmuhameduhisham" target="_blank">Abdullah Muhamedu Hisham</a></p>
+    </footer>
+</body>
+</html>

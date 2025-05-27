@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dienstleistungen - United Curry Nation</title>
+    <link rel="stylesheet" href="Aufgabe5CSS-teil.css">
+    <style>
+        /* Currydesign - allgemeines Layout und Farben */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f2e1; /* warme Hintergrundfarbe */
+            color: #333;
+        }
+
+        /* Header und Navigation */
+        header {
+            background-color: #8B4513;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ffcb7f; /* hellere Akzentfarbe für Hover-Effekt */
+        }
+
+        section {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            color: #8B4513; /* Curry-Farben für Überschriften */
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+ /* Footer */
+ footer {
+            background-color: #8B4513;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer p a {
+            color: #ffdd57;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header mit Navigationsleiste und Menü-Icon -->
+    <header>
+        <h1>United Curry Nation</h1>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="about.html">Über uns</a></li>
+                <li><a href="services.html">Kernaktivitäten</a></li>
+                <li><a href="team.html">Unser Team</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('active');
+        }
+    </script>
+
+    <section id="services">
+        <h2>Dienstleistungen und Kernaktivitäten</h2>
+        
+        <h3>Kernaktivitäten</h3>
+        <ul>
+            <li><strong>Vertrieb und Kundenberatung:</strong> Persönliche Beratung für die Auswahl der besten Produkte und Lösungen.</li>
+            <li><strong>Schadenmanagement und Kundendienst:</strong> Schnelle und effektive Lösungen für Probleme oder Schäden an gelieferten Produkten.</li>
+            <li><strong>Finanzen & Buchhaltung:</strong> Transparente und sorgfältige Abwicklung aller finanziellen Angelegenheiten.</li>
+            <li><strong>Produktentwicklung und Logistik:</strong> Planung und Organisation der gesamten Lieferkette, um hochwertige Produkte pünktlich zu liefern.</li>
+            <li><strong>Marketing und Öffentlichkeitsarbeit:</strong> Strategische Kampagnen, um das Bewusstsein für unsere Marke zu stärken.</li>
+        </ul>
+        
+        <h3>Zusätzliche Dienstleistungen</h3>
+        <ul>
+            <li><strong>Catering-Service:</strong> Bereitstellung maßgeschneiderter kulinarischer Erlebnisse für private und geschäftliche Veranstaltungen.</li>
+            <li><strong>Beratung für exotische Gewürze:</strong> Unterstützung bei der Auswahl und Verwendung von seltenen Gewürzen, um authentische Gerichte zu kreieren.</li>
+            <li><strong>Kochworkshops:</strong> Bieten Sie Kochkurse und Workshops an, die sich auf die Zubereitung von Currys und anderen exotischen Speisen spezialisieren.</li>
+            <li><strong>Exklusive Produktlinie:</strong> Hochwertige, hauseigene Gewürzmischungen und Saucen, die online und vor Ort erhältlich sind.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 United Curry Nation. Alle Rechte vorbehalten.</p>
+        <p>Website erstellt von <a href="https://www.linkedin.com/in/abdullahmuhameduhisham" target="_blank">Abdullah Muhamedu Hisham</a></p>
+    </footer>
+</body>
+</html>

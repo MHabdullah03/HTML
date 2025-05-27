@@ -1,0 +1,51 @@
+@media only screen and (min-width: 601px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+    
+      
+      .Aufteilung {
+        display: grid;
+        grid-template-columns: 30% 70%; 
+        grid-template-rows: 40% 60%;  
+        height: 100vh; 
+      }
+    
+      
+      .grid-item {
+        width: 100%;
+        height: 100%;
+      }
+    
+      .rot { background-color: #cd6060; }
+      .gruen { background-color: #9bb465; }
+      .blau { background-color: #6494ab; }
+      .gelb { background-color: #cdac53; }
+    }
+     @media only screen and (max-width: 600px) {
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+          }
+        
+          
+          .Aufteilung {
+            display: grid;
+            grid-template-rows: 25% 25% 25% 25%;  
+            height: 100vh; 
+          }
+        
+          
+          .grid-item {
+            width: 100%;
+            height: 100%;
+          }
+          .rot { background-color: #F25022; }
+          .gruen { background-color: #7FBA00; }
+          .blau { background-color: #00A4EF; }
+          .gelb { background-color: #FFB900; }
+         
+        }

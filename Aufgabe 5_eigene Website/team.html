@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Curry Nation - Unser Team</title>
+    <link rel="stylesheet" href="Aufgabe5CSS-teil.css">
+    <style>
+        /* Grundlegendes Layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #fffbfb;
+        }
+
+        /* Header und Navigation */
+        header {
+            background-color: #8B4513;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Team-Seite Struktur */
+        .team-header {
+            background-color: rgb(255, 255, 255);
+            color: #ffffff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        /* Titel in Weiß */
+        .team-header h2 {
+            font-size: 36px;
+            margin: 0;
+            color: rgb(139, 69, 19); /* Titel in braun */
+        }
+
+        /* Beschreibungstext in Schwarz */
+        .team-header p {
+            font-size: 18px;
+            margin-top: 10px;
+            color: black; /* Text unter dem Titel in schwarz */
+        }
+
+        /* Team-Mitgliederbereich */
+        .team-section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .team-member {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.264);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .team-member h3 {
+            font-size: 24px;
+            color: #8B4513;
+            margin: 10px 0 5px;
+        }
+
+        .team-member p {
+            font-size: 16px;
+            color: #110b0b;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #8B4513;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer p a {
+            color: #ffdd57;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header mit Navigationsleiste und Menü-Icon -->
+    <header>
+        <h1>United Curry Nation</h1>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="about.html">Über uns</a></li>
+                <li><a href="services.html">Kernaktivitäten</a></li>
+                <li><a href="team.html">Unser Team</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('active');
+        }
+    </script>
+    <!-- Team-Seite Einführung -->
+    <section class="team-header">
+        <h2>Unser Team</h2>
+        <p>Unser Team vereint eine Vielzahl erfahrener und hochqualifizierter Fachkräfte, die sich auf ihre jeweiligen Bereiche spezialisiert haben und mit Herzblut bei der Sache sind. Mit jahrelanger Expertise und tiefem Branchenwissen setzen sie sich leidenschaftlich dafür ein, unseren Kunden unvergleichliche kulinarische Erlebnisse und erstklassigen Service zu bieten. Jeder einzelne Mitarbeiter trägt dazu bei, die Vision von United Curry Nation jeden Tag aufs Neue zu verwirklichen.</p>
+    </section>
+
+    <!-- Team-Mitglieder -->
+    <section id="team">
+        <div class="team-member">
+            <img src="BabaBoss_United Curry.jpg" alt="Abdullah Muhamedu Hisham - CEO" style="width:150px; height:auto;">
+            <div>
+                <h3>Herr Muhamedu Hisham</h3>
+                <p>CEO, Investor und Gründer von United Curry Nation</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="CEO_United CUrry Nation.webp" alt="Herr Curry - Buisness Partner" style="width:150px; height:auto;">
+            <div>
+                <h3>Herr Curry</h3>
+                <p>Gründer von United Curry Nation</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="Küchenchefin_United Curry.webp" alt="Küchenchef" style="width:150px; height:auto;">
+            <div>
+                <h3>Frau Spice</h3>
+                <p>Leitende Küchenchefin, Meisterin der Gewürze</p>
+            </div>
+        </div>
+        
+   
+        
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 United Curry Nation. Alle Rechte vorbehalten.</p>
+        <p>Website erstellt von <a href="https://www.linkedin.com/in/abdullahmuhameduhisham" target="_blank">Abdullah Muhamedu Hisham</a></p>
+    </footer>
+</body>
+</html>
